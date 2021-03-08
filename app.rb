@@ -10,7 +10,7 @@ get "/" do
 end
 
 
-class iatadata < ActiveRecord::Base
+class iatadata < ActiveRecord::Base::maxmhbpostinstalldatav1
   self.table_name = 'maxmhbpostinstalldatav1.md_mhb__iata_detail__c'
 end
 
