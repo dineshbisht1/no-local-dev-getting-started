@@ -10,12 +10,12 @@ get "/" do
 end
 
 
-class Contact < ActiveRecord::Base
-  self.table_name = 'salesforce.contact'
+class data < ActiveRecord::Base
+  self.table_name = 'maxmhbpostinstalldatav1.MD_MHB__IATA_Detail__c'
 end
 
-get "/contacts" do
-  @contacts = Contact.all
+get "/data" do
+  @data = MD_MHB__IATA_Detail__c.all
   erb :index
 end
 
