@@ -11,7 +11,7 @@ end
 
 
 class iatadata < ActiveRecord::Base
-  self.table_name = 'maxmhbpostinstalldatav1.MD_MHB__IATA_Detail__c'
+  self.table_name = 'maxmhbpostinstalldatav1.md_mhb__iata_detail__c'
 end
 
 get "/data" do
