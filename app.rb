@@ -10,12 +10,12 @@ get "/" do
 end
 
 
-class iatadata < ActiveRecord::Base
+class data < ActiveRecord::Base
   self.table_name = 'maxmhbpostinstalldatav1.md_mhb__iata_detail__c'
 end
 
 get "/data" do
-  @data = iatadata.all
+  @data = data.all
   erb :index
 end
 
