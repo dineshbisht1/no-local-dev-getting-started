@@ -10,14 +10,14 @@ get "/" do
 end
 
 
-#class data < ActiveRecord::Base
-#  self.table_name = 'maxmhbpostinstalldatav1.md_mhb__iata_detail__c'
-#end
+class data < ActiveRecord::Base
+  self.table_name = 'maxmhbpostinstalldatav1.md_mhb__iata_detail__c'
+end
 
-#get "/data" do
-#  @data = data.all
-#  erb :index
-#end
+get "/data" do
+  @data = data.all
+  erb :index
+end
 
 get "/create" do
   dashboard_url = 'https://dashboard.heroku.com/'
